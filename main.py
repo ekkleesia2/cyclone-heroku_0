@@ -18,6 +18,6 @@ if __name__ == "__main__":
         (r"/", MainHandler)
     ])
 
-    log.startLogging(sys.stdout)
+    #log.startLogging(sys.stdout)
     reactor.listenTCP(os.environ.get("PORT", 5000), application)
     reactor.run()
